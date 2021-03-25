@@ -671,6 +671,10 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-position:hover {
+  fill: var(--accent-color);
 }
 .is-hidden {
   opacity: 0;
@@ -693,6 +697,11 @@ img {
 }
 .modal-form-field {
   margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .modal-form-input-wrapper {
@@ -724,15 +733,13 @@ img {
   left: 12px;
   transform: translateY(-50%);
   display: block;
-  width: 18px;
-  height: 18px;
-  background-color: teal;
+  fill: var(--body-font-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus + .modal-form-icon {
-  background-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .modal-form-message {
@@ -747,8 +754,9 @@ img {
 }
 
 .modal-form-message::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
   color: rgba(117, 117, 117, 0.5);
-  text-transform: uppercase;
 }
 
 .modal-form-message:focus {
@@ -765,6 +773,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  justify-content: center;
 }
 .contract {
   font-family: Roboto;
@@ -779,19 +788,17 @@ img {
   display: block;
   content: '';
   width: 16px;
-  height: 16px;
-  outline: 1px solid #000000;
+  height: 15px;
+  background-image: url(/images/Vector.svg);
   cursor: pointer;
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .modal-form-term:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
-  border: 4px solid #ffffff;
-}
-
-.modal-form-term:focus + .modal-form-check-desc::before {
-  box-shadow: 0 0 0 2px blue;
+  border-radius: 2px;
+  background-image: url(/images/icon-check.svg);
+  background-position: center;
 }
 
 .modal-form-btn {
@@ -813,6 +820,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 33px;
+  margin-top: 30px;
 }
 
 /* =============== End Modal window=============== */
