@@ -508,7 +508,79 @@ img {
   background-color: var(--accent-color);
   fill: var(--navigation-logo-studio-footer);
 }
+/* ===============Footer form=============== */
+.form-wraper {
+  margin-left: 93px;
+}
+.subscribe {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--navigation-logo-studio-footer);
+}
+.form-position {
+  margin-top: 20px;
+}
+.form-subscribe-wraper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
+.subscribe-form-input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-mail-tel-link-color);
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-mail-tel-link-color);
+}
+.subscribe-form-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  color: var(--navigation-logo-studio-footer);
+  background-color: var(--accent-color);
+
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 200px;
+  align-self: center;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 29px;
+}
+.subscribe-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.form-send-icon {
+  position: absolute;
+  right: 29px;
+  bottom: 10px;
+  fill: var(--navigation-logo-studio-footer);
+}
+/* ===============End Footer form=============== */
 /* ===============End Footer=============== */
 
 /* ===============Portfolio navigation on page=============== */
@@ -701,7 +773,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--portfolio-cards-description-color);
 }
 
 .modal-form-input-wrapper {
@@ -772,7 +844,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--portfolio-cards-description-color);
   justify-content: center;
 }
 .contract {
@@ -781,7 +853,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: #2196f3;
+  color: var(--accent-operating);
 }
 
 .modal-form-check-desc::before {
@@ -792,6 +864,14 @@ img {
   background-image: url(/images/Vector.svg);
   cursor: pointer;
   margin-right: 7px;
+  border-radius: 2px;
+}
+.modal-form-term:focus + .modal-form-check-desc::before {
+  background-image: radial-gradient(
+    circle at center,
+    rgba(33, 150, 243, 0.1),
+    rgba(33, 150, 243, 0.7)
+  );
 }
 
 .modal-form-term:checked + .modal-form-check-desc::before {
