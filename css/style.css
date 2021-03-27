@@ -446,7 +446,9 @@ img {
 /* ===============End Clients section=============== */
 
 /* ===============Footer=============== */
-
+.footer-adress-wraper {
+  width: 231px;
+}
 .footer-logo-margin {
   display: block;
   margin-bottom: 20px;
@@ -520,12 +522,13 @@ img {
   color: var(--navigation-logo-studio-footer);
 }
 .form-position {
-  margin-top: 20px;
+  margin-left: 93px;
 }
 .form-subscribe-wraper {
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 20px;
 }
 
 .subscribe-form-input {
@@ -861,7 +864,7 @@ img {
   content: '';
   width: 16px;
   height: 15px;
-  background-image: url(/images/Vector.svg);
+  background-image: url(../images/Vector.svg);
   cursor: pointer;
   margin-right: 7px;
   border-radius: 2px;
@@ -877,7 +880,7 @@ img {
 .modal-form-term:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
   border-radius: 2px;
-  background-image: url(/images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
   background-position: center;
 }
 
